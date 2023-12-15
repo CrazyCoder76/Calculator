@@ -1,0 +1,519 @@
+<html>
+    <head></head>
+    <body>
+        <div class="calc-container">
+            <div class="calculator">
+                <!--begin::Card header-->
+                <div class="calc-header">
+                    <h2>Joe's Calculator</h2>
+                </div>
+                <!--end::Card header-->
+            
+                <!--begin::Card body-->
+                <div class="calc-body">
+                    <div class="calc-body-left">
+                        <div>
+                            <p class="calc-input-description">Average reimburment rate</p>
+                            <input type="text" id="A0" class="calc-input input-currency text-start" value="$117"/>
+                        </div>
+                        <div>
+                            <p class="calc-input-description">Total sessions full time person does</p>
+                            <input type="text" id="B0" class="calc-input input-number text-start" value="26"/>
+                        </div>
+                        <div>
+                            <p class="calc-input-description">Weeks</p>
+                            <input type="text" id="C0" class="calc-input input-number text-start" value="49"/>
+                        </div>
+                        <div>
+                            <p class="calc-input-description">Annual net total</p>
+                            <input type="text" id="D0" class="calc-input input-currency text-start" value="$149,058"/>
+                        </div>
+                        <div>
+                            <p class="calc-input-description">Profit</p>
+                            <input type="text" id="E0" class="calc-input input-currency text-start" value="$30,008"/>
+                        </div>
+                        <div>
+                            <p class="calc-input-description">Total FT staff</p>
+                            <input type="text" id="F0" class="calc-input input-number text-start" value="3"/>
+                        </div>
+                        <div>
+                            <p class="calc-input-description">Net Profit</p>
+                            <input type="text" id="G0" class="calc-input input-currency text-start" value="$90,024"/>
+                        </div>
+                    </div>
+                    <table class="calc-table">
+                        <thead>
+                            <tr class="calc-table-header">
+                                <th style="min-width: 250px; text-align: start;">Costs</th>
+                                <th class="text-end" style="min-width: 100px;">Hourly</th>
+                                <th class="text-end" style="min-width: 100px;">Hours worked</th>
+                                <th class="text-end" style="min-width: 100px;">Weeks</th>
+                                <th class="text-end" style="min-width: 100px;">Annual Cost</th>
+                                <th class="text-end" style="min-width: 100px;">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class="fw-semibold text-gray-600">
+                            <tr>
+                                <td>
+                                    <p id="A1">Admin: Hourly x hours x week x %</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B1" type="text" inputmode="decimal" class="calc-input input-currency" value="$30"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C1" type="text" inputmode="decimal" class="calc-input input-float" value="15"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D1" type="text" inputmode="decimal" class="calc-input input-number" value="46"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E1" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F1" type="text" inputmode="decimal" class="calc-input input-currency-float" value="$6,900.00"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A2">Supervisor: Hourly x hours</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B2" type="text" inputmode="decimal" class="calc-input input-currency" value="$165"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C2" type="text" inputmode="decimal" class="calc-input input-float" value="1"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D2" type="text" inputmode="decimal" class="calc-input input-number" value="48"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E2" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F2" type="text" inputmode="decimal" class="calc-input input-currency" value="$2,640"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A3">Owner time: Hourly x hours</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B3" type="text" inputmode="decimal" class="calc-input input-currency" value="$200"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C3" type="text" inputmode="decimal" class="calc-input input-float" value="1.5"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D3" type="text" inputmode="decimal" class="calc-input input-number" value="48"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E3" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F3" type="text" inputmode="decimal" class="calc-input input-currency" value="$4,800"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A4">Marketing: Total / clinicians</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B4" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C4" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D4" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E4" type="text" inputmode="decimal" class="calc-input input-currency" value="$5,000"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F4" type="text" inputmode="decimal" class="calc-input input-currency" value="$1,667"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A5">Insurance billing</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B5" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C5" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D5" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E5" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F5" type="text" inputmode="decimal" class="calc-input input-currency" value="$8,943"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A6">Rent: total for business/FT</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B6" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C6" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D6" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E6" type="text" inputmode="decimal" class="calc-input input-currency" value="$30,000"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F6" type="text" inputmode="decimal" class="calc-input input-currency" value="$10,000"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A7">IT: total/clincians </p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B7" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C7" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D7" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E7" type="text" inputmode="decimal" class="calc-input input-currency" value="$10,000"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F7" type="text" inputmode="decimal" class="calc-input input-currency" value="$3,333"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A8">Misc.</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B8" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C8" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D8" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E8" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F8" type="text" inputmode="decimal" class="calc-input input-currency" value="$2,000"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A9">Salary</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B9" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C9" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D9" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E9" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F9" type="text" inputmode="decimal" class="calc-input input-currency" value="$70,000"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A10">Retirement</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B10" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C10" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D10" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E10" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F10" type="text" inputmode="decimal" class="calc-input input-currency" value="$2,100"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A11">Health</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B11" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C11" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D11" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E11" type="text" inputmode="decimal" class="calc-input input-currency" value="$20,000"/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F11" type="text" inputmode="decimal" class="calc-input input-currency" value="$6,667"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p id="A12">Extra</p>
+                                </td>
+                                <td class="text-end">
+                                    <input id="B12" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="C12" type="text" inputmode="decimal" class="calc-input input-float" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="D12" type="text" inputmode="decimal" class="calc-input input-number" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="E12" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                                <td class="text-end">
+                                    <input id="F12" type="text" inputmode="decimal" class="calc-input input-currency" value=""/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="text-end">
+                                    TOTAL Expenses
+                                </td>
+                                <td class="text-end">
+                                    <input id="F13" type="text" inputmode="decimal" class="calc-input input-currency-float" value="$119,050.15"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--end::Card body-->
+            </div>
+        </div>
+    </body>
+</html>
+
+<style>
+.calc-input {
+    display: block;
+    width: 100%;
+    padding: 0.625rem 0;
+    padding-left: 0.875rem;
+    padding-right: 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    min-height: 3rem;
+    height: 3rem;
+    line-height: 1.75rem;
+    color: #151515;
+    border: 1px solid #CDD9ED;
+    background: #fff;
+    transition: border .3s ease;
+    text-align: right;
+}
+.calc-input:focus {
+    border-color: blue;
+}
+.calc-input:focus-visible {
+    outline: none;
+}
+
+.calc-input-description {
+    letter-spacing: .0125rem;
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    color: #151515;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0.25rem;
+}
+
+.calc-container {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    word-wrap: break-word;
+    background-clip: border-box;
+    background-color: white;
+    border-top: 0.375rem solid #0157ff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1px 0 hsla(0,0%,8%,.1), 0 2px 8px -1px hsla(0,0%,8%,.2);
+    font-family: "CircularStd-Bold",Arial,sans-serif;
+}
+
+.calc-header {
+    color: #151515;
+}
+
+.calc-body {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 1.5rem;
+}
+.calc-body-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 20rem;
+    min-width: 12rem;
+    border-right: 1px solid #e3e6ee;
+    padding-right: 1.5rem;
+}
+.calc-table {
+    vertical-align: middle;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 1px 0 hsla(0,0%,8%,.1), 0 2px 8px -1px hsla(0,0%,8%,.2);
+}
+.calc-table thead {
+    background-color: #0157ff;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    clip-path: content-box;
+    color: white;
+}
+.calc-table th {
+    padding: 1.25rem;
+}
+.calc-table td {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+.calc-table tbody tr {
+    border-bottom: 2px solid #e3e6ee;
+}
+.calc-table tbody tr:last-child {
+    border-bottom: 2px solid #0157ff;
+}
+
+.text-end {
+    text-align: right;
+}
+.text-start {
+    text-align: start;
+}
+.table-row-border {
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #F1F1F4;
+}
+</style>
+
+<script language="javascript">
+    const inputs = document.getElementsByClassName("calc-input");
+    for(let i = 0; i < inputs.length; i++) {
+        const input = inputs.item(i);
+        input.addEventListener("input", function (e) {
+            reCalculateValues();
+
+            if(input.value == "") return;
+            if(input.className.search("input-number") != -1)
+                input.value = formatNumber(input.value);
+            else if(input.className.search("input-currency-float") != -1)
+                input.value = formatMoneyFloat(input.value);
+            else if(input.className.search("input-currency") != -1)
+                input.value = formatMoneyNumber(input.value);
+            else
+                input.value = formatFloat(input.value);
+        });
+    }
+    reCalculateValues();
+
+    function reCalculateValues() {
+        let arr = {};
+        for(let i = 0; i <= 5; i++) {
+            for(let j = 0; j <= 12; j++) {
+                let id = String.fromCharCode(i+65)+j;
+                const input = document.getElementById(id);
+                arr[id] = input;
+            }
+        }
+        arr["G0"] = document.getElementById("G0");
+        arr["F13"] = document.getElementById("F13");
+
+        arr["D0"].value = formatMoneyNumber(getValue(arr["A0"].value) * getValue(arr["B0"].value) * getValue(arr["C0"].value));
+
+        arr["F1"].value = formatMoneyFloat(getValue(arr["B1"].value) * getValue(arr["C1"].value) * getValue(arr["D1"].value) / getValue(arr["F0"].value));
+        arr["F2"].value = formatMoneyNumber(getValue(arr["B2"].value) * getValue(arr["C2"].value) * getValue(arr["D2"].value) / getValue(arr["F0"].value));
+        arr["F3"].value = formatMoneyNumber(getValue(arr["B3"].value) * getValue(arr["C3"].value) * getValue(arr["D3"].value) / getValue(arr["F0"].value));
+        arr["F4"].value = formatMoneyNumber(getValue(arr["E4"].value) / getValue(arr["F0"].value));
+        arr["F5"].value = formatMoneyNumber(getValue(arr["D0"].value) * 0.06);
+        arr["F6"].value = formatMoneyNumber(getValue(arr["E6"].value) / getValue(arr["F0"].value));
+        arr["F7"].value = formatMoneyNumber(getValue(arr["E7"].value) / getValue(arr["F0"].value));
+        arr["F10"].value = formatMoneyNumber(getValue(arr["F9"].value) * 0.03);
+        arr["F11"].value = formatMoneyNumber(getValue(arr["E11"].value) / getValue(arr["F0"].value));
+        arr["F13"].value = formatMoneyFloat(getValue(arr["F1"].value) + getValue(arr["F2"].value) + getValue(arr["F3"].value) + getValue(arr["F4"].value) +
+                            getValue(arr["F5"].value) + getValue(arr["F6"].value) + getValue(arr["F7"].value) + getValue(arr["F8"].value) + getValue(arr["F9"].value) +
+                            getValue(arr["F10"].value) + getValue(arr["F11"].value) + getValue(arr["F12"].value));
+
+        arr["E0"].value = formatMoneyNumber(getValue(arr["D0"].value) - getValue(arr["F13"].value));
+        arr["G0"].value = formatMoneyNumber(getValue(arr["E0"].value) * getValue(arr["F0"].value));
+        
+    }
+    function getValue(input) {
+        let number = input.toString();
+        let value = "0";
+        for(let i = 0; i < number.length; i++)
+            if(number[i] == '.' || number[i] =='-' || number[i] >= '0' && number[i] <= '9')
+                value += number[i];
+        return parseFloat(value);
+    }
+    function formatNumber(input) {
+        let val = getValue(input).toFixed(0).toString();
+        let str = "";
+        let cnt = 0;
+        for(let i = val.length - 1; i >= 0; i--) {
+            if(cnt == 3) {
+                str = ',' + str;
+                cnt = 0;
+            }
+            str = val[i] + str;
+            cnt++;
+        }
+        return str;
+    }
+    function formatFloat(input) {
+        let val = getValue(input).toString();
+        if(input && input[input.length-1] == '.')
+            val += '.';
+        return val;
+    }
+    function formatMoneyNumber(input) {
+        return '$' + formatNumber(input);
+    }
+    function formatMoneyFloat(input) {
+        let val = getValue(input).toFixed(2).toString();
+        let x = val.split('.');
+        return formatMoneyNumber(x[0]) + '.' +x[1];
+    }
+</script>
